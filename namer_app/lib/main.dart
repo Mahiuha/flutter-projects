@@ -39,6 +39,13 @@ class MyHomePage extends StatelessWidget {
         children: [
           Text('A random idea:'),
           Text(appState.current.asLowerCase),
+
+          // Button to generate a new random word pair
+          ElevatedButton(
+              onPressed: () {
+                print('button pressed');
+              },
+              child: Text('New Idea')),
         ],
       ),
     );
